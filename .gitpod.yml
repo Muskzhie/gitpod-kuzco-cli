@@ -1,0 +1,8 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: |
+      curl -fsSL https://inference.supply/install.sh | sh
+  - command: |
+      kuzco worker start --worker lSzNlzh9spX2Q_7L5PFfx --code b8076200-6cac-4cb7-ac45-5250ec36320d
